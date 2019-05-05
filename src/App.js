@@ -8,6 +8,7 @@ import Navbar from './shared/navbar/Navbar';
 import Home from './home/Home';
 import Footer from './shared/footer/Footer';
 import Sidebar from './shared/sidebar/Sidebar';
+import Product from './product/Product';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
 
             <Container>
               <Home />
+              <Product />
             </Container>
 
             <Footer />
