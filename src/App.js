@@ -9,6 +9,7 @@ import Home from './home/Home';
 import Footer from './shared/footer/Footer';
 import Sidebar from './shared/sidebar/Sidebar';
 import Product from './product/Product';
+import Cart from './cart/Cart';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Container>
               <Home />
               <Product />
+              <Cart />
             </Container>
 
             <Footer />
