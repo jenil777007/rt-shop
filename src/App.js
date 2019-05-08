@@ -1,8 +1,10 @@
 import React from 'react';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faShoppingCart, faCartPlus, faStar, faFileInvoice } from '@fortawesome/free-solid-svg-icons';
+
 import logo from './logo.svg';
 import './App.css';
 
-import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 import Navbar from './shared/navbar/Navbar';
 import Home from './home/Home';
@@ -10,6 +12,9 @@ import Footer from './shared/footer/Footer';
 import Sidebar from './shared/sidebar/Sidebar';
 import Product from './product/Product';
 import Cart from './cart/Cart';
+
+// Make a central library for font-awesome icons used across app
+library.add(faShoppingCart, faCartPlus, faStar, faFileInvoice);
 
 function App() {
   return (

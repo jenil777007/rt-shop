@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
@@ -19,10 +21,15 @@ class Product extends Component {
                 <div className="col-md-6 text-left">
                     <div className="my-3">
                         <h2 className="display-5">Product name</h2>
-                        <p className="lead"><Badge variant="success mr-2">4.6</Badge>>100 Ratings.</p>
+                        <p className="lead">
+                            <Badge variant="success mr-2">
+                                4.6 <FontAwesomeIcon icon="star" className="ml-1" />
+                            </Badge>
+                            >100 Ratings.
+                        </p>
                         <h5 className="card-title pricing-card-title text-success mt-2"><s className="text-danger mr-2">₹699</s>₹399</h5>
                         <Button variant="outline-primary" className="mr-3">
-                            Add to Cart
+                            <FontAwesomeIcon icon="cart-plus" className="mr-1" /> Add to Cart
                         </Button>
                         <Button variant="outline-dark" disabled>
                             <Spinner

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
@@ -12,7 +14,6 @@ class Cart extends Component {
                     <div
                     // className="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
                     >
-
                         <div className="bg-white box-shadow mx-auto p-4" style={{ height: 120, borderRadius: 20 }}>
                             <p className="display-4 text-danger">Cart Empty!</p>
                         </div>
@@ -42,7 +43,7 @@ class Cart extends Component {
                         </div>
 
                         <Button variant="outline-primary" className="mt-3 float-right">
-                            Checkout
+                            <FontAwesomeIcon icon="file-invoice" className="mr-1" />Checkout
                         </Button>
                     </div>
                 </div>
