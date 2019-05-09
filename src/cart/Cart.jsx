@@ -20,13 +20,21 @@ class Cart extends Component {
 
                         <div className="bg-white box-shadow mx-auto p-4 mt-3" style={{ height: 120, borderRadius: 20 }}>
                             <div className="row">
-                                <div className="col-md-4">img</div>
+                                <div className="col-md-3">img</div>
                                 <div className="col-md-6 text-left">
                                     <h2 className="display-5">Product name</h2>
                                     <p>one line description</p>
                                 </div>
                                 <div className="col-md-2 text-left">
                                     <h5 className="card-title pricing-card-title text-success mt-2">₹399</h5>
+                                </div>
+                                <div className="col-md-1">
+                                    {/* <Button variant="danger" size="sm">
+                                        
+                                    </Button> */}
+                                    <a>
+                                        <FontAwesomeIcon icon="minus-circle" className="text-danger mt-2" />
+                                    </a>
                                 </div>
                             </div>
                         </div>

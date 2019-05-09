@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect, Link } from "react-router-dom";
 
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/Form'
@@ -9,7 +10,9 @@ class Sidebar extends Component {
         return (
             <nav className="col-md-2 d-none d-md-block bg-light sidebar">
                 <div className="border-bottom box-shadow text-center">
-                    <h5 className="my-0 mr-md-auto m-4 font-weight-normal">rtShop</h5>
+                    <Link to="home">
+                        <h5 className="my-0 mr-md-auto m-4 font-weight-normal">rtShop</h5>
+                    </Link>
                 </div>
 
                 <div className="m-3">
@@ -19,16 +22,16 @@ class Sidebar extends Component {
                 <div className="sidebar-sticky">
                     <ul className="nav flex-column">
                         <li className="nav-item">
-                            <a className="nav-link active" href="#">
+                            <Link to="/home" className="nav-link active">
                                 <span data-feather="home"></span>
                                 Home <span className="sr-only">(current)</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <Link to="/home" className="nav-link">
                                 <span data-feather="file"></span>
                                 Orders
-                </a>
+                </Link>
                         </li>
                     </ul>
 
