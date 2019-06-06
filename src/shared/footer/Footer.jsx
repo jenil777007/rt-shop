@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 class Footer extends Component {
     state = {}
@@ -10,23 +11,13 @@ class Footer extends Component {
                         {/* <img className="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24" /> */}
                         <small className="d-block mb-3 text-muted">Jenil Calcuttawala, 2019</small>
                     </div>
-                    <div className="col-6 col-md">
-                        <h5>Features</h5>
-                        <ul className="list-unstyled text-small">
-                            <li><a className="text-muted" href="#a">Cool stuff</a></li>
-                        </ul>
-                    </div>
-                    <div className="col-6 col-md">
-                        <h5>Resources</h5>
-                        <ul className="list-unstyled text-small">
-                            <li><a className="text-muted" href="#b">Resource name</a></li>
-                        </ul>
-                    </div>
-                    <div className="col-6 col-md">
-                        <h5>About</h5>
-                        <ul className="list-unstyled text-small">
+                    <div className="col-6 col-md text-right">
+
+                        <h5><Link to="/about" className="p-2 text-dark">About</Link></h5>
+
+                        {/* <ul className="list-unstyled text-small">
                             <li><a className="text-muted" href="#c">Team</a></li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
             </footer>
